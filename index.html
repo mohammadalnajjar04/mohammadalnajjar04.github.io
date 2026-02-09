@@ -2,60 +2,177 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mohammad Alnajjar</title>
+  <title>Mohammad Alnajjar | Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
+    :root {
+      --bg: #020617;
+      --card: #020617;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      background: #0f172a;
-      color: #e5e7eb;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at top, #020617, #000);
+      color: var(--text);
     }
 
-    .card {
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      padding: 40px;
     }
 
-    h1 {
-      font-size: 36px;
+    header h1 {
+      font-size: 48px;
       margin-bottom: 10px;
     }
 
-    .subtitle {
-      color: #94a3b8;
-      margin-bottom: 30px;
+    header p {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 600px;
+      margin: auto;
     }
 
-    .links a {
-      text-decoration: none;
-      color: #38bdf8;
-      border: 1px solid #38bdf8;
-      padding: 10px 20px;
-      margin: 5px;
-      border-radius: 6px;
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a {
       display: inline-block;
+      margin: 8px;
+      padding: 12px 26px;
+      border-radius: 30px;
+      border: 1px solid var(--accent);
+      transition: 0.3s;
     }
 
-    .links a:hover {
-      background: #38bdf8;
-      color: #0f172a;
+    .buttons a:hover {
+      background: var(--accent);
+      color: #000;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      border-left: 4px solid var(--accent);
+      padding-left: 15px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.03);
+      padding: 25px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.05);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.05);
     }
   </style>
 </head>
 
 <body>
-  <div class="card">
-    <h1>Mohammad Alnajjar</h1>
-    <p class="subtitle">Computer Science Graduate | Software Developer</p>
 
-    <div class="links">
+<header>
+  <div>
+    <h1>Mohammad Alnajjar</h1>
+    <p>
+      Computer Science Graduate passionate about building scalable web applications,
+      solving complex problems, and exploring AI & modern software engineering.
+    </p>
+
+    <div class="buttons">
       <a href="https://github.com/mohammadalnajjar04" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/mohammad-alnajjar04" target="_blank">LinkedIn</a>
-      <a href="mailto:alnajjarmohammad00@gmail.com">Email</a>
+      <a href="mailto:alnajjarmohammad00@gmail.com">Contact</a>
     </div>
   </div>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p style="color:var(--muted)">
+    I am a Computer Science graduate with strong foundations in algorithms,
+    object-oriented programming, databases, and full-stack web development.
+    I enjoy transforming ideas into real-world applications and continuously
+    improving my technical skills.
+  </p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">C++ / OOP / Data Structures</div>
+    <div class="card">JavaScript / PHP / SQL</div>
+    <div class="card">HTML / CSS / Responsive Design</div>
+    <div class="card">Git / GitHub / Linux</div>
+    <div class="card">Problem Solving & Algorithms</div>
+    <div class="card">AI Fundamentals</div>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Agricultural Supply Chain System</h3>
+      <p style="color:var(--muted)">
+        Web-based system for managing agricultural products, suppliers, and logistics
+        using PHP & MySQL.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Personal Portfolio Website</h3>
+      <p style="color:var(--muted)">
+        A responsive personal website built with HTML & CSS and hosted on GitHub Pages.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Mohammad Alnajjar — Built with ❤️ & GitHub Pages
+</footer>
+
 </body>
 </html>
